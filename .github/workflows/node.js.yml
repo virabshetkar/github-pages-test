@@ -32,6 +32,6 @@ jobs:
       uses: actions/upload-pages-artifact@v3.0.1
       with:
         # Path of the directory containing the static assets.
-        path: dist/ # default is _site/
+        path: dist/profile-site/browser/ # default is _site/
     - name: Deploy GitHub Pages site
       uses: actions/deploy-pages@v4.0.5
