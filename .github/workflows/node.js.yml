@@ -30,6 +30,7 @@ jobs:
     - run: npm run build
   deploy:
     runs-on: ubuntu-latest
+    needs: build
 
     steps:
     - name: Upload GitHub Pages artifact
