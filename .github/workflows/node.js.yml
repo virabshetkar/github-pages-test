@@ -5,6 +5,7 @@ name: Node.js CI
 
 permissions:
   id-token: write
+  pages: write
 
 on:
   push:
