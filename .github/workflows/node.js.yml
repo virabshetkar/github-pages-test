@@ -7,9 +7,7 @@ permissions:
   id-token: write
   pages: write
 
-on:
-  push:
-    branches: [ "main" ]
+on: workflow_dispatch
 
 jobs:
   build:
