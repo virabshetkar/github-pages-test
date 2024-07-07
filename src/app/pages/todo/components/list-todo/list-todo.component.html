@@ -1,0 +1,11 @@
+@for(todo of (todos$ | async); track todo.id) {
+<div class="todo-item">
+  <div class="title">{{todo.title}}</div>
+  <button (click)="delete(todo.id)">Delete</button>
+</div>
+}
+@empty {
+<div class="empty-container">
+  No Todos
+</div>
+}
