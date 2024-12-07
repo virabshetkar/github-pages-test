@@ -6,12 +6,12 @@ pipeline {
     stages {
         stage('Install Dependencies') {
             steps {
-                bat 'npm ci'
+                sh 'npm ci'
             }
         }
         stage('Build Project') {
             steps {
-                bat 'npm run build'
+                sh 'npm run build'
             }
         }
     }
